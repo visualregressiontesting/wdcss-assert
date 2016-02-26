@@ -1,0 +1,32 @@
+{
+  "name": "wdcss-assert",
+  "version": "0.0.1",
+  "description": "Simple WebdriverCSS Assertion Function",
+  "main": "src/assert.js",
+  "directories": {
+    "test-server": "http-server test/mock-site -p 9999 &",
+    "test": "npm run test-server & mocha test/assert.js"
+  },
+  "scripts": {
+    "test": "mocha test/assert.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/visualregressiontesting/wdcss-assert.git"
+  },
+  "keywords": [
+    "WebdriverIO",
+    "WebdriverCSS",
+    "Assertion",
+    "Test"
+  ],
+  "author": "Kevin Lamping",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/visualregressiontesting/wdcss-assert/issues"
+  },
+  "homepage": "https://github.com/visualregressiontesting/wdcss-assert#readme",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
+}
