@@ -5,8 +5,7 @@ module.exports = function assertShots (err, shots) {
 
   Object.keys(shots).forEach(function(element) {
     shots[element].forEach(function(shot) {
-      console.log(shot.message);
-      assert.ok(shot.isWithinMisMatchTolerance);
+      assert.ok(shot.isWithinMisMatchTolerance, shot.message);
     })
   });
 };

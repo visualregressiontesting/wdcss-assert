@@ -44,22 +44,22 @@ browser
       elem: '.header',
       screenWidth: [640,960]
   }, assertShots)
-  // .webdrivercss('multiple', [{
-  //       name: 'header',
-  //       elem: '.header'
-  //   }, {
-  //       name: 'content',
-  //       elem: '.content'
-  //   }], assertShots)
-  // .webdrivercss('multiplewresolutions', [{
-  //       name: 'header',
-  //       elem: '.header',
-  //       screenWidth: [640,960]
-  //   }, {
-  //       name: 'content',
-  //       elem: '.content',
-  //       screenWidth: [640,960]
-  //   }], assertShots)
+  .webdrivercss('multiple', [{
+        name: 'header',
+        elem: '.header'
+    }, {
+        name: 'content',
+        elem: '.content'
+    }], assertShots)
+  .webdrivercss('multiplewresolutions', [{
+        name: 'header',
+        elem: '.header',
+        screenWidth: [640,960]
+    }, {
+        name: 'content',
+        elem: '.content',
+        screenWidth: [640,960]
+    }], assertShots)
   .end()
   .then(function () {
     console.log("Tests complete");
